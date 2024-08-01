@@ -136,6 +136,8 @@ class Discord {
                 $color = 4886754;
                 break;
             case 2:
+                $fields[] = array("filename" => "Filename", "value" => $data['filename']);
+                $fields[] = array("path" => "Path", "value" => $data['path']);
                 $fields[] = array("name" => "Name", "value" => $data['name']);
                 if (!empty($data['label'])) $fields[] = array("name" => "Label", "value" => $data['label']);
                 $fields[] = array("name" => "Size", "value" => self::bytes(round($data['size'],2)));
@@ -172,6 +174,7 @@ class Discord {
             "embeds" => array(
                 array(
                     "title" => "Torrent ".$actions[$data['action']].": ".$data['name'],
+                    "action" => $actions[$data['action']],
                     "color" => $color,
                     "timestamp" => date('Y-m-d\TH:i:s.u'),
                     "thumbnail" => array(

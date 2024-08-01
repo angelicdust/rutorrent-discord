@@ -20,6 +20,8 @@ if(chdir($path))
         $tracker = substr( $argv[10], 0, $pos );
     $data = array
     (
+        "filename"=>$argv[0],
+        "path"=>$path,
         "action"=>$action,
         "name"=>$argv[2],
         "size"=>floatval($argv[3]),
