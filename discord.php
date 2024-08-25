@@ -16,8 +16,8 @@ class Discord {
         "discord_deletion"=>0,
         "discord_ratio"=>0,
         "discord_webhook"=>'',
-        "discord_avatar"=>'',
-        "discord_pushuser"=>'',
+        "discord_avatar"=>'https://cdn.angelicdust.net/icons/rutorrent-slim.png',
+        "discord_pushuser"=>'rTorrent',
         "discord_mentionuser"=>'',
     );
 
