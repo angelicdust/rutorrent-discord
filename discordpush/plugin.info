@@ -1,9 +1,0 @@
-plugin.description: Posts a notification to a Discord webhook on torrent events
-plugin.author: samicrusader
-plugin.version: 1.6
-plugin.runlevel: 11
-rtorrent.remote: error
-rtorrent.external.error: php
-rtorrent.php.error: discord.php,push.php
-php.extensions.error: json
-plugin.help: https://github.com/Fat-Cats-LLC/rutorrent-discord
